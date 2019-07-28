@@ -15,7 +15,7 @@ var product = {
     },
     addProduct: function (Product, callback) {
 
-        return db.query("Insert into product_tbl values(?,?,?,?,?,?)", [null,Product.pro_name, Product.pro_price, Product.pro_desc, Product.pro_qty, Product.pro_mfg], callback);
+        return db.query("Insert into product_tbl values(?,?,?,?,?,?,?)", [null,Product.pro_name, Product.pro_price, Product.pro_desc, Product.pro_qty, Product.pro_mfg,Product.pro_img], callback);
     },
     deleteProduct: function (id, callback) {
         return db.query("Delete from product_tbl where pro_id=?", [id], callback);
