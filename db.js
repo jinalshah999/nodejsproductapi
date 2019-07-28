@@ -1,5 +1,4 @@
 var mysql=require('mysql');
-
 var connection=mysql.createPool({
 host:'localhost',
      user:'root',
@@ -7,5 +6,5 @@ host:'localhost',
     database:'demo'
   
 });
-//connection.connect();
+
 module.exports=connection;
